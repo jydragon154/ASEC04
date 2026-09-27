@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>施工安全衛生｜工程監造工作系統</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<style>
+    .safety-tag { display:inline-block; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:700; color:#fff; }
+    .tag-critical { background:#b72f32; }
+    .tag-high { background:#e07835; }
+    .tag-medium { background:#d4a62a; color:#253a5f; }
+    .risk-card { background:#fff; border:1px solid #e0e0e0; border-radius:8px; padding:1.25rem; margin-bottom:1rem; }
+    .risk-card h4 { margin:0 0 0.5rem; color:#153a5f; font-size:1.05rem; display:flex; align-items:center; gap:0.5rem; }
+    .stop-box { background:#fff0ed; border:1px solid #f3b9ad; border-radius:6px; padding:0.75rem 1rem; color:#8d2e27; font-size:0.9rem; margin:1rem 0; }
+    .stop-box b { color:#8d2e27; }
+    .flow-steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:0.75rem; margin:1rem 0; }
+    .flow-step { background:#eaf0f7; border-radius:6px; padding:0.75rem; text-align:center; position:relative; }
+    .flow-step .step-title { font-weight:700; color:#153a5f; margin-bottom:0.25rem; }
+    .flow-step .step-note { font-size:0.8rem; color:#63779d; }
+    .control-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; margin:1rem 0; }
+    .control-card { background:#fafbfd; border:1px solid #dce4ef; border-radius:6px; padding:0.75rem 1rem; }
+    .control-card .ctrl-title { font-weight:700; color:#153a5f; margin-bottom:0.5rem; font-size:0.95rem; }
+    .control-card ul { margin:0.25rem 0 0 1.25rem; padding:0; font-size:0.85rem; line-height:1.5; }
+    .gate-list { display:grid; gap:0.75rem; margin:1rem 0; }
+    .gate-row { display:grid; grid-template-columns:40px 1fr; gap:0.75rem; align-items:start; padding:0.75rem 1rem; background:#f2f4f8; border-radius:6px; }
+    .gate-badge { display:grid; place-items:center; width:36px; height:36px; border-radius:6px; background:#2179a1; color:#fff; font-size:1.05rem; font-weight:700; }
+    .gate-content b { display:block; color:#153a5f; font-size:0.95rem; }
+    .gate-content span { display:block; margin-top:0.25rem; font-size:0.85rem; color:#526a91; line-height:1.5; }
+    .kpi-box { background:#153a5f; border-radius:6px; padding:1rem; color:#fff; margin:1rem 0; }
+    .kpi-box b { color:#ffc857; font-size:0.95rem; }
+    .kpi-box ol { margin:0.5rem 0 0 1.25rem; padding:0; font-size:0.85rem; line-height:1.6; }
+    .pin-hotspot { display:grid; grid-template-columns:36px 1fr; gap:0.75rem; align-items:start; padding:0.5rem 0.75rem; background:#fff; border:1px solid #d1dbec; border-radius:6px; margin-bottom:0.5rem; }
+    .pin-marker { display:grid; place-items:center; width:32px; height:32px; border-radius:50%; background:#e85d3f; color:#fff; font-weight:700; }
+    .scope-note { background:#eef2f8; border-left:4px solid #2179a1; padding:0.75rem 1rem; font-size:0.88rem; line-height:1.55; margin:0.75rem 0; }
+    .accent { color:#e85d3f; font-weight:700; }
+    .risk-table { width:100%; border-collapse:separate; border-spacing:0 6px; }
+    .risk-table th { background:#153a5f; color:#fff; padding:8px; font-size:0.85rem; text-align:left; }
+    .risk-table td { background:#f5f7fb; padding:10px; vertical-align:top; font-size:0.85rem; line-height:1.5; }
+    .risk-table td:first-child { border-radius:4px 0 0 4px; font-weight:700; }
+    .risk-table td:last-child { border-radius:0 4px 4px 0; }
+  
+    .placeholder { color:#aaa; font-style:italic; }
+  </style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<div class="badge">V1.2｜更新日期：2026/9/15</div>
+<h1>工程監造工作系統</h1>
+<p class="subtitle">八仙山主峰步道暨八仙山森林遊樂區設施整建工程 — 監造工作統一入口</p>
+</div>
+</header>
+<nav>
+<div class="nav-inner">
+<a href="index.html">首頁</a>
+<a href="calendar.html">行事曆</a>
+<a href="workflow.html">工程概要及進度</a>
+<a href="quality.html">材料品質管理</a>
+<a href="construction-quality.html">施工品質管理</a>
+<a href="safety.html">施工安全衛生</a>
+<a href="downloads.html">施工照片／更新紀錄</a>
+</div>
+</nav>
+<main>
+<h2 class="section-title">施工安全衛生</h2>
+<p class="placeholder" style="color:#555;">依「職安衛施工風險評估報告」（顧問初評日期：[YYYY.MM.DD]）；適用範圍：[工程性質]；圖面檢視：[X 張]；辨識 [X 項] 優先管控風險，適用階段：設計圖說階段／施工前確認。</p>
+<!-- 一、圖面風險熱點 -->
+<h3 class="section-title" style="font-size:1.15rem;">一、圖面風險熱點</h3>
+<div class="pin-hotspot"><div class="pin-marker">1</div><div><b class="placeholder">[風險位置]</b>：<span class="placeholder">[危害類別]</span></div></div>
+
+
+
+
+
+<div class="scope-note"><b>判讀依據：</b><span class="placeholder">[依據圖說編號與判讀說明]</span></div>
+<!-- 二、風險排序 -->
+<h3 class="section-title" style="font-size:1.15rem;">二、風險排序（施工前殘餘風險須降至可接受）</h3>
+<table class="risk-table">
+<thead>
+<tr>
+<th style="width:19%">工項／危害</th>
+<th style="width:23%">可能情境</th>
+<th style="width:10%">初始值</th>
+<th>必要控制（依消除→工程→管理→PPE）</th>
+</tr>
+</thead>
+<tbody><tr><td class="placeholder">[工項／危害]</td><td class="placeholder">[可能情境]</td><td class="placeholder">[初始值]</td><td class="placeholder">[必要控制（依消除→工程→管理→PPE）]</td></tr></tbody>
+</table>
+<div class="scope-note" style="font-size:0.82rem;">風險值＝可能性 L（1–5）×嚴重度 S（1–5）；紅 ≥16、橙 10–15。實際分數應由施工團隊依工法、人數、工期與現勘重評。</div>
+<div class="stop-box"><b>立即停工條件：</b><span class="placeholder">[依專案風險評估列出停工條件]</span></div>
+<!-- 三、管控流程 -->
+<h3 class="section-title" style="font-size:1.15rem;">三、現場閉環管控流程</h3>
+<p style="color:#555; font-size:0.9rem;">把圖面風險轉為「許可—隔離—查驗—紀錄—復歸」的現場閉環。</p>
+<div class="flow-steps">
+<div class="flow-step"><div class="step-title">① 現勘／套圖</div><div class="step-note placeholder">[說明]</div></div>
+<div class="flow-step"><div class="step-title">② JSA＋施工計畫</div><div class="step-note placeholder">[說明]</div></div>
+<div class="flow-step"><div class="step-title">③ 作業許可</div><div class="step-note placeholder">[說明]</div></div>
+<div class="flow-step"><div class="step-title">④ 現場查驗</div><div class="step-note placeholder">[說明]</div></div>
+<div class="flow-step"><div class="step-title">⑤ 復歸結案</div><div class="step-note placeholder">[說明]</div></div>
+</div>
+<!-- 四、工程與管理措施 -->
+<h3 class="section-title" style="font-size:1.15rem;">四、工程與管理措施</h3>
+<div class="control-grid">
+<div class="control-card">
+<div class="ctrl-title placeholder">[控制類別名稱]</div>
+<ul><li class="placeholder">[控制措施]</li></ul>
+</div>
+
+
+
+
+
+</div>
+<!-- 五、教育訓練 -->
+<h3 class="section-title" style="font-size:1.15rem;">五、教育訓練改善</h3>
+<table>
+<thead>
+<tr><th style="width:22%">對象／時點</th><th>必要內容與驗證</th></tr>
+</thead>
+<tbody><tr><td class="placeholder">[對象／時點]</td><td class="placeholder">[必要內容與驗證]</td></tr></tbody>
+</table>
+<div class="scope-note"><b>改善重點：</b><span class="placeholder">[教育訓練改善重點]</span></div>
+<!-- 六、查核關卡 -->
+<h3 class="section-title" style="font-size:1.15rem;">六、查核關卡與成效（責任到人、照片可追溯）</h3>
+<div class="gate-list">
+<div class="gate-row"><div class="gate-badge">A</div><div class="gate-content"><b class="placeholder">[關卡A 名稱／負責人]</b><span class="placeholder">[查核內容]</span></div></div>
+<div class="gate-row"><div class="gate-badge">B</div><div class="gate-content"><b class="placeholder">[關卡B 名稱／負責人]</b><span class="placeholder">[查核內容]</span></div></div>
+<div class="gate-row"><div class="gate-badge">C</div><div class="gate-content"><b class="placeholder">[關卡C 名稱／負責人]</b><span class="placeholder">[查核內容]</span></div></div>
+<div class="gate-row"><div class="gate-badge">D</div><div class="gate-content"><b class="placeholder">[關卡D 名稱／負責人]</b><span class="placeholder">[查核內容]</span></div></div>
+<div class="gate-row"><div class="gate-badge">E</div><div class="gate-content"><b class="placeholder">[關卡E 名稱／負責人]</b><span class="placeholder">[查核內容]</span></div></div>
+</div>
+<!-- 七、30 天追蹤指標 -->
+<div class="kpi-box">
+<b>30 天追蹤指標</b>
+<ol><li class="placeholder">[指標項目]</li></ol>
+</div>
+<!-- 八、法規基線 -->
+<div class="stop-box"><b>法規基線：</b><span class="placeholder">[適用法規條文；應以施工當日有效條文及主管機關解釋為準]</span></div>
+<div class="notice" style="margin-top:1.5rem; font-size:0.85rem;">本頁內容依「職安衛施工風險評估報告」整理。原報告為圖說階段初評，不能取代現場勘查、結構／吊點計算、施工計畫、JSA、法定作業主管與專業簽證。</div>
+</main>
+<footer>
+<div class="footer-inner">
+<strong>工程監造工作系統</strong><br/>
+    本網站為工程監造內部工作資料平台，實際表單、規範與作業程序仍應依契約、核定計畫、主管機關規定及最新法規辦理。
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

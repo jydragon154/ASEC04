@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>施工照片／更新紀錄｜工程監造工作系統</title>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<style>
+    .photo-section { margin: 1rem 0 2rem; }
+    .photo-embed-wrap { position: relative; width: 100%; margin-top: 0.75rem; border: 1px solid #cfe0ec; border-radius: 6px; overflow: hidden; background: #f0f5fb; }
+    .photo-embed-wrap iframe { width: 100%; height: 600px; border: 0; display: block; }
+    .photo-fallback { margin-top: 0.5rem; font-size: 0.9rem; color: #555; }
+    .photo-fallback a { color: #2c5f8e; font-weight: 600; }
+    @media (max-width: 640px) {
+      .photo-embed-wrap iframe { height: 500px; }
+    }
+  
+    .placeholder { color:#aaa; font-style:italic; }
+  </style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<div class="badge">V1.2｜更新日期：2026/9/15</div>
+<h1>工程監造工作系統</h1>
+<p class="subtitle">八仙山主峰步道暨八仙山森林遊樂區設施整建工程 — 監造工作統一入口</p>
+</div>
+</header>
+<nav>
+<div class="nav-inner">
+<a href="index.html">首頁</a>
+<a href="calendar.html">行事曆</a>
+<a href="workflow.html">工程概要及進度</a>
+<a href="quality.html">材料品質管理</a>
+<a href="construction-quality.html">施工品質管理</a>
+<a href="safety.html">施工安全衛生</a>
+<a href="downloads.html">施工照片／更新紀錄</a>
+</div>
+</nav>
+<main>
+<h2 class="section-title">施工照片</h2>
+<div class="photo-section">
+<p style="color:#555; margin-bottom:0.5rem;">施工照片依施工日期與工項分類儲存於 Google 雲端硬碟。以下嵌入雲端硬碟資料夾預覽，Google 系統自動產生縮圖。</p>
+<div class="photo-embed-wrap">
+<iframe allowfullscreen="" loading="lazy" src="https://drive.google.com/embeddedfolderview?id=YOUR_GOOGLE_DRIVE_FOLDER_ID#grid" title="施工照片 Google 雲端硬碟資料夾預覽"></iframe>
+</div>
+<div class="setup-note" style="background:#fff8e1;border:1px solid #ffcc80;border-radius:6px;padding:0.75rem 1rem;font-size:0.85rem;color:#5d4037;margin-top:0.5rem;"><b>設定說明：</b>將本頁 iframe 與下方連結中的 <code style="background:#fff;padding:2px 6px;border-radius:3px;color:#c62828;font-weight:600;">YOUR_GOOGLE_DRIVE_FOLDER_ID</code> 兩處替換為專案之 Google Drive 父資料夾 ID。父資料夾需設定為「知道連結的任何人可檢視」，子資料夾將自動繼承權限。</div>
+  <p class="photo-fallback">若上方預覽無法顯示，請直接開啟：<a href="https://drive.google.com/drive/folders/YOUR_GOOGLE_DRIVE_FOLDER_ID?usp=sharing" rel="noopener" target="_blank">施工照片 Google 雲端硬碟資料夾 ↗</a></p>
+</div>
+<h2 class="section-title">下載專區</h2>
+<div class="search-box"><input id="tableSearch" placeholder="輸入關鍵字搜尋檔案名稱、版本或類別"/></div>
+<table>
+<thead>
+<tr><th>類別</th><th>檔案名稱</th><th>版本</th><th>修訂日期</th><th>說明</th></tr>
+</thead>
+<tbody><tr><td>契約文件</td><td>契約價金.pdf</td><td>-</td><td>2026/9/15</td><td>本案工程契約價金計算書</td></tr>
+<tr><td>監造文件</td><td>監造計畫.pdf</td><td>-</td><td>2026/9/15</td><td>本案監造計畫核定版</td></tr>
+<tr><td>監造報表</td><td>監造報表.pdf</td><td>-</td><td>2026/9/15</td><td>最新監造報表（依資料夾內檔案版本）</td></tr>
+<tr><td>統計表</td><td>工程費用比重暨施工進度綜合表__八仙山步道.xlsx</td><td>-</td><td>2026/9/15</td><td>各工項費用比重及進度綜合表</td></tr>
+<tr><td>綜合報告書</td><td>工程督導簡要報告書__八仙山步道.xlsx</td><td>V1.2</td><td>2026/9/15</td><td>本頁資料來源，統計至 115年9月15日</td></tr></tbody>
+</table>
+<h2 class="section-title">更新紀錄</h2>
+<style>
+  .changelog-table { table-layout: fixed; width: 100%; border-collapse: collapse; }
+  .changelog-table col.col-date { width: 100px; }
+  .changelog-table col.col-ver  { width: 66px; }
+  .changelog-table col.col-item { width: 260px; }
+  .changelog-table col.col-desc { width: auto; }
+  .changelog-table col.col-user { width: 92px; }
+  .changelog-table th, .changelog-table td { vertical-align: top; padding: 8px; }
+  .changelog-table th.col-date, .changelog-table td.col-date,
+  .changelog-table th.col-ver,  .changelog-table td.col-ver,
+  .changelog-table th.col-user, .changelog-table td.col-user {
+    white-space: nowrap;
+  }
+  .changelog-table th.col-item { white-space: nowrap; }
+  .changelog-table td.col-item { word-break: break-word; overflow-wrap: break-word; }
+  .changelog-table td.col-desc { white-space: normal; word-break: break-word; }
+</style>
+<table class="changelog-table">
+<colgroup>
+<col class="col-date"/><col class="col-ver"/><col class="col-item"/><col class="col-desc"/><col class="col-user"/>
+</colgroup>
+<colgroup>
+<col class="col-date"/><col class="col-ver"/><col class="col-item"/><col class="col-desc"/><col class="col-user"/>
+</colgroup>
+<thead>
+<tr><th class="col-date">日期</th><th class="col-ver">版本</th><th class="col-item">修訂項目</th><th class="col-desc">修訂說明</th><th class="col-user">修訂人</th></tr>
+</thead>
+<tbody><tr><td class="col-date">2026/9/15</td><td class="col-ver">V1.2</td><td class="col-item">行事曆補入 115.9.15 進度統計事件</td><td class="col-desc">依前面分頁（工程概要、施工概況）資料，於 xlsx 行事曆分頁新增 115/09/15 進度統計—監造報表統計日（第 28 天，預定 2.73%、實際 2.77%，累計完成金額 174,515 元、整體完工率 2.36%）。行事曆頁事件數由 10 筆增為 11 筆。</td><td class="col-user">網站管理員</td></tr><tr><td class="col-date">2026/9/15</td><td class="col-ver">V1.1</td><td class="col-item">網站資料同步 115年9月15日</td><td class="col-desc">依 115.9下半月半月報（累計預定 2.73%、累計實際 2.77%、超前 0.04 百分點、累計工期 28 天）及 115.9.15 完成數量表（累計施工金額 174,515 元、整體完工率 2.36%），更新首頁、工程概要及進度、施工品質管理、行事曆、下載專區與更新紀錄。</td><td class="col-user">網站管理員</td></tr><tr><td class="col-date">2026/8/31</td><td class="col-ver">V1.0</td><td class="col-item">網站資料首版建置（同步 115年8月31日）</td><td class="col-desc">依 115.8下半月半月報及工程督導簡要報告書__八仙山步道.xlsx，首次填入工程概要、進度管理、材料送審、行事曆與施工抽查等頁面資料。</td><td class="col-user">網站管理員</td></tr></tbody>
+</table>
+<h2 class="section-title">檔案命名建議</h2>
+<div class="notice">建議格式：文件名稱_工程類別_版本_日期，例如：屋頂防水工程查驗表_裝修工程_V1.0_YYYYMMDD.pdf</div>
+</main>
+<footer>
+<div class="footer-inner">
+<strong>工程監造工作系統</strong><br/>
+    本網站為工程監造內部工作資料平台，實際表單、規範與作業程序仍應依契約、核定計畫、主管機關規定及最新法規辦理。
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
