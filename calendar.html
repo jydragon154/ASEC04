@@ -8,10 +8,10 @@
 <link href="assets/css/style.css" rel="stylesheet"/>
 <style>
     .calendar-section { margin: 2rem 0; }
-    .calendar-table th { background: #2c5f8e; color: #fff; position:sticky; top:0; }
+    .calendar-table th { background: #2c5f2e; color: #fff; position:sticky; top:0; }
     .calendar-table td { padding: 0.5rem 0.75rem; vertical-align: top; }
     .event-tag { display:inline-block; padding:2px 8px; border-radius:12px; font-size:0.78rem; font-weight:600; margin-right:4px; white-space:nowrap; }
-    .tag-qc { background:#cfe2f3; color:#0d3d6e; }
+    .tag-qc { background:#d4edda; color:#155724; }
     .tag-progress { background:#cce5ff; color:#004085; }
     .tag-inspect { background:#fff3cd; color:#856404; }
     .tag-inspect-work { background:#ff8f00; color:#fff; border:2px solid #e65100; font-weight:700; padding:3px 10px; box-shadow:0 1px 3px rgba(230,81,0,0.25); }
@@ -21,12 +21,12 @@
     .tag-mat-entry { background:#bee5eb; color:#0c5460; }
     .tag-nonconform { background:#f5c6cb; color:#721c24; }
     .tag-oversight { background:#ffe0b2; color:#5d4037; }
-    .tag-safety { background:#bbdefb; color:#1976d2; }
+    .tag-safety { background:#c8e6c9; color:#2e7d32; }
     .tag-general { background:#e9ecef; color:#495057; }
-    .calendar-wrap { max-height:600px; overflow-y:auto; border:1px solid #cfe0ec; border-radius:6px; }
+    .calendar-wrap { max-height:600px; overflow-y:auto; border:1px solid #d4e4d4; border-radius:6px; }
     .filter-bar { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.5rem 0 1rem; font-size:0.85rem; }
-    .filter-bar .fchip { background:#f0f5fb; border:1px solid #cfe0ec; padding:4px 10px; border-radius:12px; }
-    .filter-bar .fchip strong { color:#2c5f8e; }
+    .filter-bar .fchip { background:#f4f8f4; border:1px solid #d4e4d4; padding:4px 10px; border-radius:12px; }
+    .filter-bar .fchip strong { color:#2c5f2e; }
     .calendar-table th.date-col { min-width:110px; white-space:nowrap; }
     .calendar-table th.cal-status-col, .calendar-table td.cal-status-col { min-width:80px; white-space:nowrap; text-align:center; }
     .calendar-table .tag { white-space:nowrap; }
@@ -37,7 +37,7 @@
 <body>
 <header>
 <div class="header-inner">
-<div class="badge">V1.2｜更新日期：2026/9/15</div>
+<div class="badge">V1.3｜更新日期：2026/9/30</div>
 <h1>工程監造工作系統</h1>
 <p class="subtitle">八仙山主峰步道暨八仙山森林遊樂區設施整建工程 — 監造工作統一入口</p>
 </div>
@@ -55,15 +55,15 @@
 </nav>
 <main>
 <h2 class="section-title">行事曆</h2>
-<p style="color:#555; margin-bottom:0.5rem;">依「行事曆」分頁彙整事件共 11 筆。</p>
-<div class="filter-bar"><span class="fchip">三級品管 <strong>5</strong></span> <span class="fchip">工期 <strong>4</strong></span> <span class="fchip">進度統計 <strong>2</strong></span></div>
+<p style="color:#555; margin-bottom:0.5rem;">依「行事曆」分頁彙整事件共 12 筆。</p>
+<div class="filter-bar"><span class="fchip">三級品管 <strong>5</strong></span> <span class="fchip">工期 <strong>4</strong></span> <span class="fchip">進度統計 <strong>3</strong></span></div>
 <div class="calendar-section">
 <div class="calendar-wrap">
 <table class="calendar-table">
 <thead>
 <tr><th class="date-col">日期</th><th>事件類別</th><th>事件內容</th><th>位置</th><th class="cal-status-col">狀態</th></tr>
 </thead>
-<tbody><tr><td>115/07/29</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫提送（艾字第1150400006號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已合格</span></td></tr><tr><td>115/08/04</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫核定（中育字第1153104176號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/11</td><td><span class="event-tag tag-progress">工期</span></td><td>廠商申報開工報告</td><td>施工廠商</td><td class="cal-status-col"><span class="event-tag tag-safety">已提送</span></td></tr><tr><td>115/08/12</td><td><span class="event-tag tag-qc">三級品管</span></td><td>廠商檢送施工及品質計畫（富日字第1150812002號）</td><td>施工廠商</td><td class="cal-status-col"><span class="event-tag tag-safety">已提送</span></td></tr><tr><td>115/08/13</td><td><span class="event-tag tag-progress">工期</span></td><td>審查開工報告轉陳分署（艾字第1150400007號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已審查</span></td></tr><tr><td>115/08/13</td><td><span class="event-tag tag-qc">三級品管</span></td><td>審查施工及品質計畫轉陳分署（艾字第1150400008號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已審查</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-progress">工期</span></td><td>正式開工</td><td>八仙山主峰步道暨八仙山森林遊樂區</td><td class="cal-status-col"><span class="event-tag tag-progress">進行中</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-progress">工期</span></td><td>開工報告核定（中育字第1153104491號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-qc">三級品管</span></td><td>施工及品質計畫核定（中育字第1153104492號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/31</td><td><span class="event-tag tag-progress">進度統計</span></td><td>監造報表統計日（累計完成金額57,155元，整體完工率0.8%）</td><td>工地現場</td><td class="cal-status-col"><span class="event-tag tag-safety">已統計</span></td></tr><tr><td>115/09/15</td><td><span class="event-tag tag-progress">進度統計</span></td><td>監造報表統計日（第28天，預定2.73%，實際2.77%，累計完成金額174,515元，整體完工率2.36%）</td><td>工地現場</td><td class="cal-status-col"><span class="event-tag tag-safety">已統計</span></td></tr></tbody>
+<tbody><tr><td>115/07/29</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫提送（艾字第1150400006號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已合格</span></td></tr><tr><td>115/08/04</td><td><span class="event-tag tag-qc">三級品管</span></td><td>監造計畫核定（中育字第1153104176號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/11</td><td><span class="event-tag tag-progress">工期</span></td><td>廠商申報開工報告</td><td>施工廠商</td><td class="cal-status-col"><span class="event-tag tag-safety">已提送</span></td></tr><tr><td>115/08/12</td><td><span class="event-tag tag-qc">三級品管</span></td><td>廠商檢送施工及品質計畫（富日字第1150812002號）</td><td>施工廠商</td><td class="cal-status-col"><span class="event-tag tag-safety">已提送</span></td></tr><tr><td>115/08/13</td><td><span class="event-tag tag-progress">工期</span></td><td>審查開工報告轉陳分署（艾字第1150400007號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已審查</span></td></tr><tr><td>115/08/13</td><td><span class="event-tag tag-qc">三級品管</span></td><td>審查施工及品質計畫轉陳分署（艾字第1150400008號）</td><td>監造單位</td><td class="cal-status-col"><span class="event-tag tag-safety">已審查</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-progress">工期</span></td><td>正式開工</td><td>八仙山主峰步道暨八仙山森林遊樂區</td><td class="cal-status-col"><span class="event-tag tag-progress">進行中</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-progress">工期</span></td><td>開工報告核定（中育字第1153104491號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/18</td><td><span class="event-tag tag-qc">三級品管</span></td><td>施工及品質計畫核定（中育字第1153104492號）</td><td>主辦機關</td><td class="cal-status-col"><span class="event-tag tag-safety">已核定</span></td></tr><tr><td>115/08/31</td><td><span class="event-tag tag-progress">進度統計</span></td><td>監造報表統計日（累計完成金額57,155元，整體完工率0.8%）</td><td>工地現場</td><td class="cal-status-col"><span class="event-tag tag-safety">已統計</span></td></tr><tr><td>115/09/15</td><td><span class="event-tag tag-progress">進度統計</span></td><td>監造報表統計日（第28天，預定2.73%，實際2.77%，累計完成金額174,515元，整體完工率2.36%）</td><td>工地現場</td><td class="cal-status-col"><span class="event-tag tag-safety">已統計</span></td></tr><tr><td>115/09/30</td><td><span class="event-tag tag-progress">進度統計</span></td><td>監造報表統計日（第43天，預定8.20%，實際8.24%，累計完成金額518,972元，整體完工率7.03%）</td><td>工地現場</td><td class="cal-status-col"><span class="event-tag tag-safety">已統計</span></td></tr></tbody>
 </table>
 </div>
 </div>

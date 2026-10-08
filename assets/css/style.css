@@ -1,14 +1,14 @@
 
 :root{
-  --primary:#1f5b8f;
-  --primary-dark:#164470;
+  --primary:#1f5f5b;
+  --primary-dark:#164744;
   --accent:#f2b705;
   --bg:#f5f7f6;
   --card:#ffffff;
   --text:#263238;
   --muted:#607d8b;
   --line:#d9e2df;
-  --ok:#1976d2;
+  --ok:#2e7d32;
   --warn:#b26a00;
   --danger:#b00020;
 }
@@ -21,7 +21,7 @@ body{
   line-height:1.75;
 }
 header{
-  background:linear-gradient(135deg,var(--primary),#2872a5);
+  background:linear-gradient(135deg,var(--primary),#287a73);
   color:white;
   padding:28px 6vw 22px;
 }
@@ -45,7 +45,7 @@ h1{
 }
 .subtitle{
   margin:8px 0 0;
-  color:#e7edf5;
+  color:#e7f2ef;
 }
 nav{
   background:white;
@@ -71,7 +71,7 @@ nav a{
   font-size:15px;
 }
 nav a:hover, nav a.active{
-  background:#e6eef7;
+  background:#e6f1ef;
 }
 main{
   max-width:1180px;
@@ -89,7 +89,7 @@ main{
   border:1px solid var(--line);
   border-radius:18px;
   padding:22px;
-  box-shadow:0 10px 25px rgba(31,91,143,.06);
+  box-shadow:0 10px 25px rgba(31,95,91,.06);
 }
 .card h2,.card h3{
   margin-top:0;
@@ -126,10 +126,10 @@ main{
 }
 .quick-links a{
   display:block;
-  background:#f0f5fb;
+  background:#f0f7f5;
   color:var(--primary-dark);
   text-decoration:none;
-  border:1px solid #cfdcec;
+  border:1px solid #cfe2dd;
   border-radius:14px;
   padding:14px;
   font-weight:700;
@@ -147,7 +147,7 @@ th,td{
   vertical-align:top;
 }
 th{
-  background:#eaf0f8;
+  background:#eaf4f2;
   color:var(--primary-dark);
   text-align:left;
 }
@@ -157,11 +157,11 @@ tr:last-child td{border-bottom:0}
   padding:2px 9px;
   border-radius:999px;
   font-size:13px;
-  background:#eef2f8;
+  background:#eef4f2;
   color:var(--primary-dark);
-  border:1px solid #d4dfec;
+  border:1px solid #d4e4df;
 }
-.tag.ok{background:#e8f5e9;color:var(--ok);border-color:#bbdefb}
+.tag.ok{background:#e8f5e9;color:var(--ok);border-color:#c8e6c9}
 .tag.warn{background:#fff8e1;color:var(--warn);border-color:#ffe0a3}
 .tag.danger{background:#ffebee;color:var(--danger);border-color:#ffcdd2}
 .timeline{
@@ -199,7 +199,7 @@ tr:last-child td{border-bottom:0}
 .checklist li{
   padding:8px 0 8px 32px;
   position:relative;
-  border-bottom:1px dashed #d8dfec;
+  border-bottom:1px dashed #d8e3df;
 }
 .checklist li:before{
   content:"✓";
@@ -227,8 +227,8 @@ tr:last-child td{border-bottom:0}
   font-size:16px;
 }
 footer{
-  background:#173a5f;
-  color:#dce4ef;
+  background:#173f3c;
+  color:#dce9e6;
   padding:24px 6vw;
 }
 .footer-inner{
