@@ -8,10 +8,10 @@
 <link href="assets/css/style.css" rel="stylesheet"/>
 <style>
     .calendar-section { margin: 2rem 0; }
-    .calendar-table th { background: #2c5f2e; color: #fff; position:sticky; top:0; }
+    .calendar-table th { background: #2c5f8e; color: #fff; position:sticky; top:0; }
     .calendar-table td { padding: 0.5rem 0.75rem; vertical-align: top; }
     .event-tag { display:inline-block; padding:2px 8px; border-radius:12px; font-size:0.78rem; font-weight:600; margin-right:4px; white-space:nowrap; }
-    .tag-qc { background:#d4edda; color:#155724; }
+    .tag-qc { background:#cfe2f3; color:#0d3d6e; }
     .tag-progress { background:#cce5ff; color:#004085; }
     .tag-inspect { background:#fff3cd; color:#856404; }
     .tag-inspect-work { background:#ff8f00; color:#fff; border:2px solid #e65100; font-weight:700; padding:3px 10px; box-shadow:0 1px 3px rgba(230,81,0,0.25); }
@@ -21,19 +21,19 @@
     .tag-mat-entry { background:#bee5eb; color:#0c5460; }
     .tag-nonconform { background:#f5c6cb; color:#721c24; }
     .tag-oversight { background:#ffe0b2; color:#5d4037; }
-    .tag-safety { background:#c8e6c9; color:#2e7d32; }
+    .tag-safety { background:#bbdefb; color:#1976d2; }
     .tag-general { background:#e9ecef; color:#495057; }
     .summary-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; margin:1rem 0; }
     .summary-card { background:#fff; border:1px solid #e0e0e0; border-radius:8px; padding:1.25rem; }
-    .summary-card h4 { margin:0 0 0.5rem; color:#2c5f2e; font-size:1rem; }
+    .summary-card h4 { margin:0 0 0.5rem; color:#2c5f8e; font-size:1rem; }
     .progress-bar-wrap { background:#e9ecef; border-radius:4px; height:14px; margin:4px 0; }
-    .progress-bar-fill { background:#2c5f2e; height:100%; border-radius:4px; }
+    .progress-bar-fill { background:#2c5f8e; height:100%; border-radius:4px; }
     .kv-table td { padding:0.35rem 0.6rem; }
     .kv-table td:first-child { font-weight:600; color:#444; width:120px; }
-    .calendar-wrap { max-height:600px; overflow-y:auto; border:1px solid #d4e4d4; border-radius:6px; }
+    .calendar-wrap { max-height:600px; overflow-y:auto; border:1px solid #cfe0ec; border-radius:6px; }
     .filter-bar { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.5rem 0 1rem; font-size:0.85rem; }
-    .filter-bar .fchip { background:#f4f8f4; border:1px solid #d4e4d4; padding:4px 10px; border-radius:12px; }
-    .filter-bar .fchip strong { color:#2c5f2e; }
+    .filter-bar .fchip { background:#f0f5fb; border:1px solid #cfe0ec; padding:4px 10px; border-radius:12px; }
+    .filter-bar .fchip strong { color:#2c5f8e; }
     .calendar-table th.date-col { min-width:110px; white-space:nowrap; }
     .calendar-table th.cal-status-col, .calendar-table td.cal-status-col { min-width:80px; white-space:nowrap; text-align:center; }
     .calendar-table .tag { white-space:nowrap; }
@@ -44,7 +44,7 @@
 <body>
 <header>
 <div class="header-inner">
-<div class="badge">V1.3｜更新日期：2026/9/30</div>
+<div class="badge">V1.4｜更新日期：2026/10/15</div>
 <h1>工程監造工作系統</h1>
 <p class="subtitle">八仙山主峰步道暨八仙山森林遊樂區設施整建工程 — 監造工作統一入口</p>
 </div>
@@ -79,7 +79,7 @@
 <div class="card">
 <h3>最新公告</h3>
 <table>
-<tr><th>日期</th><th>公告事項</th></tr><tr><td>2026/9/30</td><td>網站資料同步 115年9月30日半月報：預定進度 8.20%、實際進度 8.24%，超前 0.04 百分點，累計工期 43 天，累計施工金額 518,972 元、整體完工率 7.03%。</td></tr><tr><td>2026/9/15</td><td>網站資料同步 115年9月15日半月報：預定 2.73%、實際 2.77%、超前 0.04 百分點、累計工期 28 天、累計完成 174,515 元、整體完工率 2.36%。</td></tr><tr><td>2026/8/31</td><td>網站資料首版建置（同步 115年8月31日半月報：預定 0.87%、實際 0.91%、超前 0.04 百分點、累計工期 13 天）。</td></tr>
+<tr><th>日期</th><th>公告事項</th></tr><tr><td>2026/10/15</td><td>網站資料同步 115年10月15日半月報：預定進度 16.80%、實際進度 17.04%，超前 0.24 百分點，累計工期 58 天，累計施工金額 1,073,335 元、整體完工率 14.54%。</td></tr><tr><td>2026/9/30</td><td>網站資料同步 115年9月30日半月報：預定 8.20%、實際 8.24%、超前 0.04 百分點、累計工期 43 天、累計完成 518,972 元、整體完工率 7.03%。</td></tr><tr><td>2026/9/15</td><td>網站資料同步 115年9月15日半月報：預定 2.73%、實際 2.77%、超前 0.04 百分點、累計工期 28 天、累計完成 174,515 元、整體完工率 2.36%。</td></tr><tr><td>2026/8/31</td><td>網站資料首版建置（同步 115年8月31日半月報：預定 0.87%、實際 0.91%、超前 0.04 百分點、累計工期 13 天）。</td></tr><tr><td>2026/8/31</td><td>網站資料首版建置（同步 115年8月31日半月報：預定 0.87%、實際 0.91%、超前 0.04 百分點、累計工期 13 天）。</td></tr>
 
 
 
@@ -93,15 +93,15 @@
 <h2 class="section-title">工程概要事項紀錄</h2>
 <div class="summary-grid">
 <div class="summary-card">
-<h4>工程進度摘要（統計至 115年9月30日）</h4>
+<h4>工程進度摘要（統計至 115年10月15日）</h4>
 <table class="kv-table">
 <tr><td>工程名稱</td><td>八仙山主峰步道暨八仙山森林遊樂區設施整建工程</td></tr>
 <tr><td>契約金額</td><td>7,380,000 元（7380 千元）</td></tr>
 <tr><td>開工日期</td><td>115年8月18日</td></tr>
 <tr><td>預定完工</td><td>116年2月13日</td></tr>
-<tr><td>預定進度</td><td>8.2%</td></tr>
-<tr><td>實際進度</td><td>8.24%（超前 0.04 百分點）</td></tr>
-<tr><td>累計工期</td><td>43 天</td></tr>
+<tr><td>預定進度</td><td>16.8%</td></tr>
+<tr><td>實際進度</td><td>17.04%（超前 0.24 百分點）</td></tr>
+<tr><td>累計工期</td><td>58 天</td></tr>
 <tr><td>實際支出</td><td>0 千元</td></tr>
 </table>
 </div>
@@ -109,20 +109,20 @@
 <h4>主要工項完成率</h4>
 <p style="font-size:0.85rem; margin-bottom:8px;">其他 75.2%</p>
 <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:75.2%"></div></div>
-<p style="font-size:0.85rem; margin-bottom:8px;">八仙山主峰步道 21.2%</p>
-<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:21.2%"></div></div>
-<p style="font-size:0.85rem; margin-bottom:8px;">八仙山步道登山口 1.7%</p>
-<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:1.7%"></div></div>
+<p style="font-size:0.85rem; margin-bottom:8px;">八仙山主峰步道 34.8%</p>
+<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:34.8%"></div></div>
+<p style="font-size:0.85rem; margin-bottom:8px;">八仙山步道登山口 9.6%</p>
+<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:9.6%"></div></div>
+<p style="font-size:0.85rem; margin-bottom:8px;">林間教室階梯看台 7.8%</p>
+<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:7.8%"></div></div>
 <p style="font-size:0.85rem; margin-bottom:8px;">自然教育中心前鋪面 0.0%</p>
-<div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0.5%"></div></div>
-<p style="font-size:0.85rem; margin-bottom:8px;">林間教室階梯看台 0.0%</p>
 <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0.5%"></div></div>
 <p style="font-size:0.85rem; margin-bottom:8px;">觀溪平台 0.0%</p>
 <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:0.5%"></div></div>
 </div>
 </div>
 <h2 class="section-title">更新資訊</h2>
-<div class="notice">目前版本：V1.3｜資料統計截止日：115年9月30日（2026/9/30）。本次依 115.9下半月（9/30）半月報及 115.9.30 完成數量表，同步更新首頁、工程概要及進度、施工品質管理、行事曆與下載專區。</div>
+<div class="notice">目前版本：V1.4｜資料統計截止日：115年10月15日（2026/10/15）。本次依 115.10上半月（10/15）半月報及 115.10.15 完成數量表，同步更新首頁、工程概要及進度、施工品質管理、行事曆與下載專區。</div>
 </main>
 <footer>
 <div class="footer-inner">
